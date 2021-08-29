@@ -24,7 +24,7 @@ public class JPAUtil {
 
 	public JPAUtil() {
 		if (factory == null) {
-			factory = Persistence.createEntityManagerFactory("meuprimeiroprojetojsf", javaProperties());
+			factory = Persistence.createEntityManagerFactory("meuprimeiroprojetojsf");
 		}
 	}
 
