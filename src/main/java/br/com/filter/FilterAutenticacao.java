@@ -25,6 +25,7 @@ public class FilterAutenticacao implements Filter, Serializable {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
+	
 	@Inject
 	private JPAUtil jpaUtil;
 
