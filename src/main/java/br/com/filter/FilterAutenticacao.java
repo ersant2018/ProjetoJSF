@@ -60,7 +60,6 @@ public class FilterAutenticacao implements Filter, Serializable {
 	@Override
 	public void init(FilterConfig arg0) throws ServletException {
 		
-		//jpaUtil.getEntityManager();
 	}
 
 }
