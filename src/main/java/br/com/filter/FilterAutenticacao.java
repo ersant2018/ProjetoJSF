@@ -3,7 +3,7 @@ package br.com.filter;
 import java.io.IOException;
 import java.io.Serializable;
 
-import javax.inject.Inject;
+import javax.enterprise.inject.spi.CDI;
 import javax.servlet.Filter;
 import javax.servlet.FilterChain;
 import javax.servlet.FilterConfig;
@@ -26,8 +26,6 @@ public class FilterAutenticacao implements Filter, Serializable {
 	 */
 	private static final long serialVersionUID = 1L;
 	
-	@Inject
-	private JPAUtil jpaUtil;
 
 	@Override
 	public void destroy() {
@@ -58,6 +56,8 @@ public class FilterAutenticacao implements Filter, Serializable {
 
 	@Override
 	public void init(FilterConfig arg0) throws ServletException {
+		
+		JPAUtil jpaUtil = CDI.current().select(JPAUtil.class).get();
 		jpaUtil.getEntityManager();
 	}
 
