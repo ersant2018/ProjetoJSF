@@ -14,9 +14,11 @@
 		<properties>
 			
 	
-			
+			<!-- projeto9_meuprimeiroprojetojsf -->
 			<property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5433/meuprimeiroprojetojsf"/>
+			<!-- projeto9_userprojetojsf  -->
 			<property name="javax.persistence.jdbc.user" value="postgres"/>
+			<!-- userprojetojsf -->
 			<property name="javax.persistence.jdbc.password" value="admin" />
 			
 		
