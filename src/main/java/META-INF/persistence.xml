@@ -13,7 +13,9 @@
 		
 		<properties>
 		
-			<property name="javax.persistence.jdbc.url" value="${DATABASE_URL}"/>
+			<property name="javax.persistence.jdbc.url" value="jdbc:postgresql://ec2-52-2-118-38.compute-1.amazonaws.com:5432/d8mve2ljs4tc9h?sslmode=require"/>
+			<property name="javax.persistence.jdbc.user" value="xafzrdgbnrynis"/>
+			<property name="javax.persistence.jdbc.password" value="ff9fa4489425f7045bc0e338db3e22e7c2fabf75ad6a3d04216ce0806718ecb5" />
 		
 			
 			<property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />
@@ -22,7 +24,21 @@
 			<property name="hibernate.format_sql" value="true" />
 			<property name="hibernate.hbm2ddl.auto" value="update" />
 			
+			<!-- minimo de conexões ou portas disponiveis  -->
+			<property name="hibernate.c3p0.min_size" value="1"/>
 			
+			<!-- máximo de portas que terá abertas -->
+			<property name="hibernate.c3p0.max_size" value="1"/>
+			
+			<!-- o numero de segundos em que uma conexão inativa é mantida no pool -->
+			<property name="hibernate.c3p0.timeout"
+			     value="300"/>
+			     
+			<!-- Numero total de instruçoes, transaçõs, operacoes no banco de dados mantida em cache -->     
+			<property name="hibernate.c3p0.max_statements" value="1"/>
+			
+			<!-- Temo ocioso em segundos antes de um conexão ser validada automaticamente -->
+			<property name="hibernate.c390.idle_test_period" value="10"/>     
 			
 		</properties>
 	
