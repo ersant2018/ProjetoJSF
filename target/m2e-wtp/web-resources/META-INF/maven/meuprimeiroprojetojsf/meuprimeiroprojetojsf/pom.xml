@@ -13,7 +13,7 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<maven.compiler.target>15</maven.compiler.target>
+		<maven.compiler.target>1.8</maven.compiler.target>
 		<maven.compiler.soure>15</maven.compiler.soure>
 	</properties>
 
@@ -24,8 +24,8 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.5.1</version>
 				<configuration>
-					<source>15</source>
-					<target>15</target>
+					<source>1.8</source>
+					<target>1.8</target>
 				</configuration>
 			</plugin>
 
