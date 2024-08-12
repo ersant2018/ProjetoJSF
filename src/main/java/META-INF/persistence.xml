@@ -15,10 +15,10 @@
 			
 	
 			<!-- projeto9_meuprimeiroprojetojsf -->
-			<property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/projeto9_meuprimeiroprojetojsf"/>
+			<property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/SistemaLogin", "postgres" , "admin"/>
 			<!-- projeto9_userprojetojsf  -->
 			<property name="javax.persistence.jdbc.user" value="projeto9_userprojetojsf"/>
-			<!--  userprojetojsf-->
+			<!-- userprojetojsf -->
 			<property name="javax.persistence.jdbc.password" value="userprojetojsf" />
 			
 		

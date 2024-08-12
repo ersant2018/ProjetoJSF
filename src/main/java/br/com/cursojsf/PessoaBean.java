@@ -69,7 +69,7 @@ public class PessoaBean implements Serializable {
 
 	public String salvar() throws IOException{
 		
-		if (arquivofoto.getInputStream() != null) {
+		if (arquivofoto != null && arquivofoto.getInputStream() != null) {
 		/*Processsar imagem*/
 			 byte[] imagemByte = getByte(arquivofoto.getInputStream());
 			 
